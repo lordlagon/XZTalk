@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "471441222469",
+    "firebase_url": "https://xztalk-51c5e.firebaseio.com",
+    "project_id": "xztalk-51c5e",
+    "storage_bucket": "xztalk-51c5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471441222469:android:fcf08d13fa42ec25",
+        "android_client_info": {
+          "package_name": "com.xztech.xztalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471441222469-3n5t0sj4dagda3v4dm3t3ldm8r21sk7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xztech.xztalk",
+            "certificate_hash": "5dc50062daf948adb92c0a3d66bc89a9ca404074"
+          }
+        },
+        {
+          "client_id": "471441222469-mb5noahhl1donvou9k83a7a1b4dfpf26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5f2dk-V5RhlhPUD9i_MgcVEMdAHx7xYc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471441222469-mb5noahhl1donvou9k83a7a1b4dfpf26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
