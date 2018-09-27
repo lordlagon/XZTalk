@@ -23,6 +23,7 @@ namespace XZTalk
         private EditText edtChat;
         private FloatingActionButton fab;
         private DatabaseReference myref;
+        private FirebaseDatabase database;
 
         public int MyResultCode = 1;
 
@@ -43,11 +44,11 @@ namespace XZTalk
 
             FirebaseOptions firebaseopt = builder.Build() ;
             FirebaseApp firebaseapp = FirebaseApp.InitializeApp(this,firebaseopt);
-                       
+            database = FirebaseDatabase.GetInstance(firebaseapp);
             // Set our view from the "main" layout resource  
             SetContentView(Resource.Layout.main);
-            FirebaseDatabase database = FirebaseDatabase.GetInstance(firebaseapp );
-            myref = database.GetReference("chats");
+            
+            
             
             fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             edtChat = FindViewById<EditText>(Resource.Id.input);
@@ -66,7 +67,7 @@ namespace XZTalk
 
         private  void PostMessage()
         {
-
+            myref = database.GetReference("user");
             myref.SetValue(edtChat.Text);//, FirebaseAuth.Instance.CurrentUser.Email);
            // var items = await firebaseClient.Child("chats").PostAsync(new MessageContent(FirebaseAuth.Instance.CurrentUser.Email, edtChat.Text));
             edtChat.Text = "";
